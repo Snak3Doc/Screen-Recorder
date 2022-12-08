@@ -29,6 +29,7 @@ stopBtn.onclick = e => {
 const videoSelectBtn = document.getElementById('videoSelectBtn');
 videoSelectBtn.onclick = getVideoSources;
 
+
 // Get the available video sources
 async function getVideoSources() {
   const inputSources = await desktopCapturer.getSources({
@@ -43,7 +44,6 @@ async function getVideoSources() {
       };
     })
   );
-
 
   videoOptionsMenu.popup();
 }
